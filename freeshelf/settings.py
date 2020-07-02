@@ -47,9 +47,11 @@ INSTALLED_APPS = [
     # Third-party
     'debug_toolbar',
     'django_extensions',
+    'registration',
 
     # Project-specific
     'users',
+    'books',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +140,7 @@ INTERNAL_IPS = [
     '127.0.0.1',
     # ...
 ]
+
+ACCOUNT_ACTIVATION_DAYS = 2
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
